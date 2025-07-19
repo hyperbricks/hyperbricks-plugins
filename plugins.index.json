@@ -1,0 +1,60 @@
+{
+  "github.com/hyperbricks/plugins/esbuild": {
+    "1.0.0": {
+      "plugin": "github.com/hyperbricks/plugins/esbuild",
+      "version": "1.0.0",
+      "compatible_hyperbricks": [
+        ">=0.5.0"
+      ],
+      "description": "Hyperbricks esbuild plugin"
+    }
+  },
+  "github.com/hyperbricks/plugins/loremipsum": {
+    "1.0.0": {
+      "plugin": "github.com/hyperbricks/plugins/loremipsum",
+      "version": "1.0.0",
+      "compatible_hyperbricks": [
+        ">=0.5.0"
+      ],
+      "description": "Hyperbricks loremipsum plugin"
+    },
+    "1.0.1": {
+      "plugin": "github.com/hyperbricks/plugins/loremipsum",
+      "version": "1.0.1",
+      "compatible_hyperbricks": [
+        ">=0.5.0"
+      ],
+      "description": "Hyperbricks loremipsum plugin"
+    }
+  },
+  "github.com/hyperbricks/plugins/markdown": {
+    "1.0.0": {
+      "plugin": "github.com/hyperbricks/plugins/markdown",
+      "version": "1.0.0",
+      "compatible_hyperbricks": [
+        ">=0.5.0"
+      ],
+      "description": "Hyperbricks markdown plugin"
+    }
+  },
+  "github.com/hyperbricks/plugins/myplugin": {
+    "1.0.0": {
+      "plugin": "github.com/hyperbricks/plugins/myplugin",
+      "version": "1.0.0",
+      "compatible_hyperbricks": [
+        ">=0.5.0"
+      ],
+      "description": "Hyperbricks myplugin plugin"
+    }
+  },
+  "github.com/hyperbricks/plugins/tailwindcss": {
+    "1.0.0": {
+      "plugin": "github.com/hyperbricks/plugins/tailwindcss",
+      "version": "1.0.0",
+      "compatible_hyperbricks": [
+        ">=0.5.0"
+      ],
+      "description": "Hyperbricks tailwindcss plugin"
+    }
+  }
+}

@@ -1,0 +1,6 @@
+{
+  "plugin": "github.com/hyperbricks/plugins/loremipsum",
+  "version": "1.0.0",
+  "compatible_hyperbricks": [">=0.5.0"],
+  "description": "Hyperbricks loremipsum plugin"
+}
