@@ -156,7 +156,3 @@ Returns:
 ```html
 <script src="static/js/bundle.min.js" defer></script>
 ```
-
----
-
-**Need CLI command-line equivalents or more troubleshooting tips? Just ask!**
