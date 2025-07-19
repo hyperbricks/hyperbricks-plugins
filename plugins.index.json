@@ -4,7 +4,7 @@
       "plugin": "github.com/hyperbricks/plugins/esbuild",
       "version": "1.0.0",
       "compatible_hyperbricks": [
-        ">=0.5.0"
+        ">=0.5.0-alpha"
       ],
       "description": "Hyperbricks esbuild plugin"
     }
@@ -14,7 +14,7 @@
       "plugin": "github.com/hyperbricks/plugins/loremipsum",
       "version": "1.0.0",
       "compatible_hyperbricks": [
-        ">=0.5.0"
+        ">=0.5.0-alpha"
       ],
       "description": "Hyperbricks loremipsum plugin"
     },
@@ -22,7 +22,7 @@
       "plugin": "github.com/hyperbricks/plugins/loremipsum",
       "version": "1.0.1",
       "compatible_hyperbricks": [
-        ">=0.5.0"
+        ">=0.5.0-alpha"
       ],
       "description": "Hyperbricks loremipsum plugin"
     }
@@ -32,7 +32,7 @@
       "plugin": "github.com/hyperbricks/plugins/markdown",
       "version": "1.0.0",
       "compatible_hyperbricks": [
-        ">=0.5.0"
+        ">=0.5.0-alpha"
       ],
       "description": "Hyperbricks markdown plugin"
     }
@@ -42,7 +42,7 @@
       "plugin": "github.com/hyperbricks/plugins/myplugin",
       "version": "1.0.0",
       "compatible_hyperbricks": [
-        ">=0.5.0"
+        ">=0.5.0-alpha"
       ],
       "description": "Hyperbricks myplugin plugin"
     }
@@ -52,7 +52,7 @@
       "plugin": "github.com/hyperbricks/plugins/tailwindcss",
       "version": "1.0.0",
       "compatible_hyperbricks": [
-        ">=0.5.0"
+        ">=0.5.0-alpha"
       ],
       "description": "Hyperbricks tailwindcss plugin"
     }

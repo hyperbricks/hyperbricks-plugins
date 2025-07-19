@@ -1,6 +1,6 @@
 {
   "plugin": "github.com/hyperbricks/plugins/esbuild",
   "version": "1.0.0",
-  "compatible_hyperbricks": [">=0.5.0"],
+  "compatible_hyperbricks": [">=0.5.0-alpha"],
   "description": "Hyperbricks esbuild plugin"
 }

@@ -1,6 +1,6 @@
 {
   "plugin": "github.com/hyperbricks/plugins/tailwindcss",
   "version": "1.0.0",
-  "compatible_hyperbricks": [">=0.5.0"],
+  "compatible_hyperbricks": [">=0.5.0-alpha"],
   "description": "Hyperbricks tailwindcss plugin"
 }
