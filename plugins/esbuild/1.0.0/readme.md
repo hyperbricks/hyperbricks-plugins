@@ -96,10 +96,12 @@ the plugin returns:
 To bundle multiple sources, create an entry file (e.g. `esbuild-bundle-entry.js`):
 
 ```js
-import './rm-schema.js';
-import './rm-parser.js';
-import './js/rm-speakit.js';
-import './js/rm-main.js';
+// node js esm module
+import "htmx.org"
+
+// relative to module resources
+import './js/main.js';
+import './js/someother.js'
 ```
 
 **All files will be included in the bundle!**
