@@ -1,6 +1,0 @@
-{
-  "plugin": "github.com/hyperbricks/plugins/myplugin",
-  "version": "1.0.1",
-  "compatible_hyperbricks": [">=0.6.0-alpha"],
-  "description": "Hyperbricks myplugin plugin"
-}

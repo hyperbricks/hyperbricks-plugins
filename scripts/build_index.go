@@ -11,6 +11,7 @@ import (
 type PluginManifest struct {
 	Plugin                string   `json:"plugin"`
 	Version               string   `json:"version"`
+	Source                string   `json:"source"`
 	CompatibleHyperbricks []string `json:"compatible_hyperbricks"`
 	Description           string   `json:"description,omitempty"`
 	// Add other fields as needed

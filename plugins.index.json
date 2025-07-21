@@ -3,6 +3,7 @@
     "1.0.0": {
       "plugin": "github.com/hyperbricks/plugins/esbuild",
       "version": "1.0.0",
+      "source": "",
       "compatible_hyperbricks": [
         ">=0.5.0-alpha"
       ],
@@ -13,6 +14,7 @@
     "1.0.0": {
       "plugin": "github.com/hyperbricks/plugins/loremipsum",
       "version": "1.0.0",
+      "source": "lorem_ipsum_plugin.go",
       "compatible_hyperbricks": [
         ">=0.5.0-alpha"
       ],
@@ -23,6 +25,7 @@
     "1.0.0": {
       "plugin": "github.com/hyperbricks/plugins/markdown",
       "version": "1.0.0",
+      "source": "markdown_plugin.go",
       "compatible_hyperbricks": [
         ">=0.5.0-alpha"
       ],
@@ -33,24 +36,18 @@
     "1.0.0": {
       "plugin": "github.com/hyperbricks/plugins/myplugin",
       "version": "1.0.0",
+      "source": "my_plugin.go",
       "compatible_hyperbricks": [
         ">=0.5.0-alpha"
       ],
-      "description": "Hyperbricks myplugin plugin"
-    },
-    "1.0.1": {
-      "plugin": "github.com/hyperbricks/plugins/myplugin",
-      "version": "1.0.1",
-      "compatible_hyperbricks": [
-        ">=0.6.0-alpha"
-      ],
-      "description": "Hyperbricks myplugin plugin"
+      "description": "Basic Plugin example"
     }
   },
   "github.com/hyperbricks/plugins/tailwindcss": {
     "1.0.0": {
       "plugin": "github.com/hyperbricks/plugins/tailwindcss",
       "version": "1.0.0",
+      "source": "tailwindcss_plugin.go",
       "compatible_hyperbricks": [
         ">=0.5.0-alpha"
       ],

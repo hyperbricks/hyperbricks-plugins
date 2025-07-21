@@ -1,6 +1,4 @@
-Very basic plugin example.
-
-**Example config:**
+**Example**
 ```
 my_plugin = <PLUGIN>
 my_plugin.plugin = MyPlugin
