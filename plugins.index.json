@@ -3,7 +3,7 @@
     "1.0.0": {
       "plugin": "github.com/hyperbricks/plugins/esbuild",
       "version": "1.0.0",
-      "source": "",
+      "source": "esbuild_plugin.go",
       "compatible_hyperbricks": [
         ">=0.5.0-alpha"
       ],
