@@ -8,6 +8,15 @@
         ">=0.5.0-alpha"
       ],
       "description": "Hyperbricks esbuild plugin"
+    },
+    "1.0.1": {
+      "plugin": "github.com/hyperbricks/plugins/esbuild",
+      "version": "1.0.1",
+      "source": "esbuild_plugin.go",
+      "compatible_hyperbricks": [
+        ">=0.5.0-alpha"
+      ],
+      "description": "Hyperbricks esbuild plugin with caching"
     }
   },
   "github.com/hyperbricks/plugins/loremipsum": {
@@ -47,6 +56,15 @@
     "1.0.0": {
       "plugin": "github.com/hyperbricks/plugins/tailwindcss",
       "version": "1.0.0",
+      "source": "tailwindcss_plugin.go",
+      "compatible_hyperbricks": [
+        ">=0.5.0-alpha"
+      ],
+      "description": "Hyperbricks tailwindcss plugin"
+    },
+    "1.0.1": {
+      "plugin": "github.com/hyperbricks/plugins/tailwindcss",
+      "version": "1.0.1",
       "source": "tailwindcss_plugin.go",
       "compatible_hyperbricks": [
         ">=0.5.0-alpha"
