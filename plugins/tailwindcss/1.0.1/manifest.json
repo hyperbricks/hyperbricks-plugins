@@ -5,5 +5,5 @@
   "compatible_hyperbricks": [
     ">=0.5.0-alpha"
   ],
-  "description": "Hyperbricks tailwindcss plugin"
+  "description": "Hyperbricks tailwindcss plugin with caching"
 }
