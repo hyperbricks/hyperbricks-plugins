@@ -16,6 +16,7 @@ import (
 // Fields defines the configuration fields for the Markdown plugin.
 type Fields struct {
 	Content string `mapstructure:"content"`
+	Class   string `mapstructure:"class"`
 }
 
 // MarkdownConfig holds the complete configuration for the Markdown plugin.
@@ -51,9 +52,12 @@ func (p *MarkdownPlugin) Render(instance interface{}, ctx context.Context) (stri
 	// Convert the Markdown content to HTML.
 	htmlBytes := blackfriday.Run([]byte(config.Fields.Content))
 	htmlContent := string(htmlBytes)
+	if config.Fields.Class == "" {
+		config.Fields.Class = "markdown_plugin-content"
+	}
 
 	// Wrap the HTML content in a container div.
-	return fmt.Sprintf("<div class=\"markdown_plugin-content\">\n%s\n</div>\n", htmlContent), errs
+	return fmt.Sprintf("<div class=\"%s\">\n%s\n</div>\n", config.Fields.Class, htmlContent), errs
 }
 
 // Plugin is the exported function that returns an instance of MarkdownPlugin.
