@@ -1,0 +1,7 @@
+{
+  "plugin": "github.com/hyperbricks/plugins/markdown",
+  "source":"markdown_plugin.go",
+ "version": "2.0.0",
+  "compatible_hyperbricks": [">=0.7.8-alpha"],
+  "description": "Hyperbricks markdown plugin"
+}
