@@ -5,7 +5,7 @@
       "version": "1.0.0",
       "source": "esbuild_plugin.go",
       "compatible_hyperbricks": [
-        ">=0.5.0-alpha"
+        ">=0.5.0-alpha, <0.7.8-alpha"
       ],
       "description": "Hyperbricks esbuild plugin"
     },
@@ -14,11 +14,11 @@
       "version": "1.0.1",
       "source": "esbuild_plugin.go",
       "compatible_hyperbricks": [
-        ">=0.5.0-alpha"
+        ">=0.5.0-alpha, <0.7.8-alpha"
       ],
       "description": "Hyperbricks esbuild plugin with caching"
     },
-     "2.0.0": {
+    "2.0.0": {
       "plugin": "github.com/hyperbricks/plugins/esbuild",
       "version": "2.0.0",
       "source": "esbuild_plugin.go",
@@ -34,7 +34,7 @@
       "version": "1.0.0",
       "source": "lorem_ipsum_plugin.go",
       "compatible_hyperbricks": [
-        ">=0.5.0-alpha"
+        ">=0.5.0-alpha, <0.7.8-alpha"
       ],
       "description": "Hyperbricks loremipsum plugin"
     }
@@ -45,7 +45,7 @@
       "version": "1.0.0",
       "source": "markdown_plugin.go",
       "compatible_hyperbricks": [
-        ">=0.5.0-alpha"
+        ">=0.5.0-alpha, <0.7.8-alpha"
       ],
       "description": "Hyperbricks markdown plugin"
     },
@@ -65,7 +65,7 @@
       "version": "1.0.0",
       "source": "my_plugin.go",
       "compatible_hyperbricks": [
-        ">=0.5.0-alpha"
+        ">=0.5.0-alpha, <0.7.8-alpha"
       ],
       "description": "Basic Plugin example"
     },
@@ -74,7 +74,7 @@
       "version": "2.0.0",
       "source": "my_plugin.go",
       "compatible_hyperbricks": [
-        ">=0.7.8-alpha"
+        ">=0.5.0-alpha, <0.7.8-alpha"
       ],
       "description": "Basic Plugin example"
     }
@@ -85,7 +85,7 @@
       "version": "1.0.0",
       "source": "tailwindcss_plugin.go",
       "compatible_hyperbricks": [
-        ">=0.5.0-alpha"
+        ">=0.5.0-alpha, <0.7.8-alpha"
       ],
       "description": "Hyperbricks tailwindcss plugin"
     },
@@ -94,7 +94,7 @@
       "version": "1.0.1",
       "source": "tailwindcss_plugin.go",
       "compatible_hyperbricks": [
-        ">=0.5.0-alpha"
+        ">=0.5.0-alpha, <0.7.8-alpha"
       ],
       "description": "Hyperbricks tailwindcss plugin with caching"
     },
