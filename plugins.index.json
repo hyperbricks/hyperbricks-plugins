@@ -17,6 +17,15 @@
         ">=0.5.0-alpha"
       ],
       "description": "Hyperbricks esbuild plugin with caching"
+    },
+     "2.0.0": {
+      "plugin": "github.com/hyperbricks/plugins/esbuild",
+      "version": "2.0.0",
+      "source": "esbuild_plugin.go",
+      "compatible_hyperbricks": [
+        ">=0.7.8-alpha"
+      ],
+      "description": "Hyperbricks esbuild plugin with caching"
     }
   },
   "github.com/hyperbricks/plugins/loremipsum": {
@@ -39,6 +48,15 @@
         ">=0.5.0-alpha"
       ],
       "description": "Hyperbricks markdown plugin"
+    },
+    "2.0.0": {
+      "plugin": "github.com/hyperbricks/plugins/markdown",
+      "version": "2.0.0",
+      "source": "markdown_plugin.go",
+      "compatible_hyperbricks": [
+        ">=0.7.8-alpha"
+      ],
+      "description": "Hyperbricks markdown plugin"
     }
   },
   "github.com/hyperbricks/plugins/myplugin": {
@@ -48,6 +66,15 @@
       "source": "my_plugin.go",
       "compatible_hyperbricks": [
         ">=0.5.0-alpha"
+      ],
+      "description": "Basic Plugin example"
+    },
+    "2.0.0": {
+      "plugin": "github.com/hyperbricks/plugins/myplugin",
+      "version": "2.0.0",
+      "source": "my_plugin.go",
+      "compatible_hyperbricks": [
+        ">=0.7.8-alpha"
       ],
       "description": "Basic Plugin example"
     }
@@ -68,6 +95,15 @@
       "source": "tailwindcss_plugin.go",
       "compatible_hyperbricks": [
         ">=0.5.0-alpha"
+      ],
+      "description": "Hyperbricks tailwindcss plugin with caching"
+    },
+    "2.0.0": {
+      "plugin": "github.com/hyperbricks/plugins/tailwindcss",
+      "version": "2.0.0",
+      "source": "tailwindcss_plugin.go",
+      "compatible_hyperbricks": [
+        ">=0.7.8-alpha"
       ],
       "description": "Hyperbricks tailwindcss plugin with caching"
     }
