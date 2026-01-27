@@ -1264,16 +1264,19 @@
 
 /* Inline edit highlights */
 .cr-inline-active .cr-inline {
-  outline: 1px dashed rgba(5, 219, 242, 0.45);
+  outline: 1px dashed rgba(5, 218, 242, 0.092);
   border-radius: 4px;
+  padding:4px;
+  margin:0px;
   cursor: pointer;
   transition: background-color 0.12s ease, outline-color 0.12s ease;
   display: inline-block;
+  background: rgba(5, 218, 242, 0.041);
 }
 
 .cr-inline-active .cr-inline:hover {
   background: rgba(5, 219, 242, 0.12);
-  outline-color: rgba(5, 219, 242, 0.9);
+  outline-color: rgba(5, 218, 242, 0.359);
 }
 
 .cr-inline-active .cr-inline--block {
