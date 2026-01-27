@@ -43,7 +43,7 @@
       "version": "2.0.0",
       "source": "lorem_ipsum_plugin.go",
       "compatible_hyperbricks": [
-         ">=0.7.8-alpha"
+        ">=0.7.8-alpha"
       ],
       "description": "Hyperbricks loremipsum plugin"
     }
@@ -83,7 +83,7 @@
       "version": "2.0.0",
       "source": "my_plugin.go",
       "compatible_hyperbricks": [
-          ">=0.7.8-alpha"
+        ">=0.7.8-alpha"
       ],
       "description": "Basic Plugin example"
     }
@@ -115,6 +115,17 @@
         ">=0.7.8-alpha"
       ],
       "description": "Hyperbricks tailwindcss plugin with caching"
+    }
+  },
+  "github.com/hyperbricks/plugins/contentrecords": {
+    "2.1.0": {
+      "plugin": "github.com/hyperbricks/plugins/contentrecords",
+      "source": "content_records_plugin.go",
+      "version": "2.1.0",
+      "compatible_hyperbricks": [
+        ">=0.7.8-alpha"
+      ],
+      "description": "Template-driven content records plugin for Hyperbricks"
     }
   }
 }

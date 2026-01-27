@@ -1,0 +1,7 @@
+{
+  "plugin": "github.com/hyperbricks/plugins/contentrecords",
+  "source": "content_records_plugin.go",
+  "version": "2.1.0",
+  "compatible_hyperbricks": [">=0.8.0-alpha"],
+  "description": "Template-driven content records plugin for Hyperbricks"
+}
