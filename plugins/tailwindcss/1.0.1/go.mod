@@ -1,4 +1,4 @@
-module github.com/hyperbricks/plugins/esbuild
+module github.com/hyperbricks/plugins/tailwindcss
 
 go 1.23.4
 
