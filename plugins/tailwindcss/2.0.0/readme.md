@@ -1,97 +1,72 @@
-### Change log:
-1.0.1 - adding cache function
+# Tailwind CSS Plugin 2.0.0
 
-## 📦 **TailwindCssPlugin for HyperBricks (Tailwind v4+)**
-## Overview
+The Tailwind CSS plugin runs the Tailwind standalone CLI to compile an input CSS file into the module's static assets. It is designed for Tailwind v4 style input files and can optionally minify and cache the rendered include result.
 
-**TailwindCssPlugin** builds Tailwind CSS using the [standalone CLI](https://tailwindcss.com/blog/standalone-cli).
-It’s designed for Tailwind v4+ (which no longer uses CLI `--content`).
+## Manifest
 
----
-
-## 🚀 Quickstart
-
-**1. Create your Tailwind config** (`tailwind.config.js`):
-
-```js
-module.exports = {
-  content: [
-    './modules/RoutineMaster/templates/**/*.html', // <--- adjust as needed
+```json
+{
+  "plugin": "github.com/hyperbricks/plugins/tailwindcss",
+  "source": "tailwindcss_plugin.go",
+  "binary": "TailwindCssPlugin",
+  "version": "2.0.0",
+  "compatible_hyperbricks": [
+    ">=0.7.8-alpha"
   ],
-  // ...your Tailwind settings
+  "description": "Builds Tailwind CSS with the standalone Tailwind CLI and optional caching."
 }
 ```
 
-**2. Reference the config in your input CSS**
-*(Required if your config file isn’t named `tailwind.config.js` in project root)*
+## Enable The Plugin
 
-```css
-@config "../../../../tailwind.config.js";
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+```yaml
+hyperbricks:
+  plugins:
+    enabled:
+      - TailwindCssPlugin@2.0.0
 ```
 
-**3. Plugin config example:**
+## Example HyperBricks YAML
 
-```
-tailwind = <PLUGIN>
-tailwind.plugin = TailwindCssPlugin
-tailwind.data.input_css = {{RESOURCES}}/src/css/base.css
-tailwind.data.output_css = {{STATIC}}/css/front_page.css
-tailwind.data.signal = true
-tailwind.data.minify = true
-tailwind.data.debug = true
-tailwind.data.cache = false
-tailwind.data.enclose = <link rel="stylesheet" href="|">
+Create `resources/css/app.css` with your Tailwind imports, then compile it into `static/css/app.css`:
 
-#optional for inline use css marker like this:
-tailwind.data.enclose = <style>{{css}}</style>
-```
+```yaml
+styles:
+  - type: plugin
+  - plugin: TailwindCssPlugin@2.0.0
+  - data:
+      input_css:
+        path: {base: resources, path: css/app.css}
+      output_css:
+        path: {base: static, path: css/app.css}
+      binary: tailwindcss
+      minify: true
+      signal: false
+      debug: false
+      cache: true
+      enclose: '<link rel="stylesheet" href="|">'
 
----
-
-## 🔍 Key Options
-
-| Option       | Required | Purpose                                                                      |
-| ------------ | -------- | ---------------------------------------------------------------------------- |
-| `input_css`  | Yes      | Your CSS file that imports Tailwind (and optionally your config)             |
-| `output_css` | Yes      | Where to write the compiled CSS                                              |
-| `config`     | No       | Path to Tailwind config (usually handled via `@config` in input CSS for v4+) |
-| `binary`     | No       | Path to Tailwind CLI binary (default: `tailwindcss`)                         |
-| `minify`     | No       | If true, minifies output                                                     |
-| `debug`      | No       | If true, prints full CLI stdout/stderr                                       |
-| `signal`     | No       | If true, runs a sanity check to confirm CLI is working                       |
-| `enclose`    | No       | If set, wraps output (not typical for static files)                          |
-| `cache`      | No       | Enable caching                                   |
----
-
-## 📝 Notes
-
-* `output_css` **must** be set.
-* Tailwind ‘content’ scanning is **always** controlled in your `tailwind.config.js` file.
-* Use `@config` at the top of your input CSS if your config file isn’t in the project root.
-* Use `debug: true` for troubleshooting—shows all CLI output.
-* Use `signal: true` if you want the plugin to check Tailwind CLI availability at build time.
-
----
-
-## Example Directory Structure
-
-```
-project-root/
-  tailwind.config.js
-  modules/
-    RoutineMaster/
-      templates/
-      resources/
-        src/css/base.css     <-- input_css
-      static/css/front_page.css  <-- output_css
+page:
+  - type: hypermedia
+  - route: index
+  - title: Tailwind demo
+  - head:
+      - inherit: styles
+  - content:
+      - type: html
+      - value: '<main class="mx-auto max-w-3xl p-8">Tailwind is compiled.</main>'
 ```
 
----
+## Data Fields
 
-## 🔗 Reference
-
-See [Tailwind Standalone CLI](https://tailwindcss.com/blog/standalone-cli)
-See [Tailwind v4 ‘@config’](https://tailwindcss.com/docs/content-configuration#using-tailwind-without-node-js)
+| Field | Required | Description |
+| --- | ---: | --- |
+| `input_css` | yes | Input CSS file passed to `tailwindcss -i`. |
+| `output_css` | yes | Output CSS file passed to `tailwindcss -o`. |
+| `config` | no | Optional config path; Tailwind v4 projects often use `@config` in CSS instead. |
+| `binary` | no | Tailwind CLI binary. Defaults to `tailwindcss`. |
+| `signal` | no | Runs a quick CLI availability check. |
+| `enclose` | no | Wrapper for the generated CSS URL, or `<style>{{css}}</style>` for inline CSS. |
+| `minify` | no | Adds `--minify`. |
+| `debug` | no | Streams CLI output to the HyperBricks logger. |
+| `cache` | no | Caches the rendered include result in memory. |

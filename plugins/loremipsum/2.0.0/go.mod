@@ -1,8 +1,11 @@
-module github.com/hyperbricks/plugins/myplugin
+module github.com/hyperbricks/plugins/loremipsum
 
 go 1.26.1
 
-require github.com/hyperbricks/hyperbricks v0.7.9-alpha
+require (
+	github.com/drhodes/golorem v0.0.0-20220328165741-da82e5b29246
+	github.com/hyperbricks/hyperbricks v1.0.0-beta
+)
 
 require (
 	dario.cat/mergo v1.0.1 // indirect

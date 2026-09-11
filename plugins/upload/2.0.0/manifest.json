@@ -1,0 +1,10 @@
+{
+  "plugin": "github.com/hyperbricks/plugins/upload",
+  "source": "upload_plugin.go",
+  "binary": "Upload",
+  "version": "2.0.0",
+  "compatible_hyperbricks": [
+    ">=0.8.0-alpha"
+  ],
+  "description": "Renders multipart upload forms and stores validated uploads on the local filesystem."
+}

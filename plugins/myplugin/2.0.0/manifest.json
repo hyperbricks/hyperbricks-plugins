@@ -1,7 +1,10 @@
 {
   "plugin": "github.com/hyperbricks/plugins/myplugin",
   "source": "my_plugin.go",
- "version": "2.0.0",
-  "compatible_hyperbricks": [">=0.7.8-alpha"],
-  "description": "Basic Plugin example"
+  "binary": "MyPlugin",
+  "version": "2.0.0",
+  "compatible_hyperbricks": [
+    ">=0.7.8-alpha"
+  ],
+  "description": "Minimal native Go plugin example for rendering configured data."
 }

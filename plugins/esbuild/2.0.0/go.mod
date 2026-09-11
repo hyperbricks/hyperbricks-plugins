@@ -1,10 +1,10 @@
-module github.com/hyperbricks/plugins/markdown
+module github.com/hyperbricks/plugins/esbuild
 
 go 1.26.1
 
 require (
+	github.com/evanw/esbuild v0.25.7
 	github.com/hyperbricks/hyperbricks v0.0.0
-	github.com/russross/blackfriday/v2 v2.1.0
 )
 
 require (

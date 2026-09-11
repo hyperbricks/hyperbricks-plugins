@@ -12,9 +12,10 @@ type PluginManifest struct {
 	Plugin                string   `json:"plugin"`
 	Version               string   `json:"version"`
 	Source                string   `json:"source"`
+	Runtime               string   `json:"runtime,omitempty"`
+	Binary                string   `json:"binary,omitempty"`
 	CompatibleHyperbricks []string `json:"compatible_hyperbricks"`
 	Description           string   `json:"description,omitempty"`
-	// Add other fields as needed
 }
 
 func main() {
@@ -38,6 +39,11 @@ func main() {
 		var manifest PluginManifest
 		if err := json.Unmarshal(data, &manifest); err != nil {
 			fmt.Fprintf(os.Stderr, "Error parsing %s: %v\n", path, err)
+			return nil
+		}
+
+		if manifest.Plugin == "" || manifest.Version == "" {
+			fmt.Fprintf(os.Stderr, "Skipping %s: plugin and version are required\n", path)
 			return nil
 		}
 
