@@ -3,7 +3,7 @@ module github.com/hyperbricks/plugins/tailwindcss
 go 1.26.1
 
 require (
-	github.com/hyperbricks/hyperbricks v0.0.0
+	github.com/hyperbricks/hyperbricks v1.2.5-beta
 	go.uber.org/zap v1.27.0
 )
 
@@ -12,6 +12,7 @@ require (
 	github.com/Masterminds/goutils v1.1.1 // indirect
 	github.com/Masterminds/semver/v3 v3.5.0 // indirect
 	github.com/Masterminds/sprig/v3 v3.3.0 // indirect
+	github.com/charmbracelet/x/term v0.2.1 // indirect
 	github.com/emirpasic/gods v1.18.1 // indirect
 	github.com/gabriel-vasile/mimetype v1.4.3 // indirect
 	github.com/go-playground/locales v0.14.1 // indirect

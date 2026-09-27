@@ -4,7 +4,7 @@ go 1.26.1
 
 require (
 	github.com/evanw/esbuild v0.25.7
-	github.com/hyperbricks/hyperbricks v0.0.0
+	github.com/hyperbricks/hyperbricks v1.2.5-beta
 )
 
 require (
@@ -12,6 +12,7 @@ require (
 	github.com/Masterminds/goutils v1.1.1 // indirect
 	github.com/Masterminds/semver/v3 v3.5.0 // indirect
 	github.com/Masterminds/sprig/v3 v3.3.0 // indirect
+	github.com/charmbracelet/x/term v0.2.1 // indirect
 	github.com/emirpasic/gods v1.18.1 // indirect
 	github.com/gabriel-vasile/mimetype v1.4.3 // indirect
 	github.com/go-playground/locales v0.14.1 // indirect
@@ -33,5 +34,3 @@ require (
 	golang.org/x/sys v0.44.0 // indirect
 	golang.org/x/text v0.22.0 // indirect
 )
-
-replace github.com/hyperbricks/hyperbricks => /Users/robbertstreng/Documents/GitHub/hyperbricks
